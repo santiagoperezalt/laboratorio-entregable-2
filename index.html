@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Personal - Hoja de Vida</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f5f7fb;
+      color:#0f172a;
+      line-height:1.6;
+    }
+    .page{max-width:1000px; margin:24px auto; padding:0 16px;}
+    header{
+      background:#fff;
+      border:1px solid #e2e8f0;
+      border-radius:14px;
+      padding:20px 24px;
+      margin-bottom:16px;
+    }
+    h1{margin:0 0 6px;}
+    .subtitle{color:#475569; margin:0;}
+    .grid{
+      display:grid; gap:16px;
+      grid-template-columns:320px 1fr;
+    }
+    @media(max-width:860px){.grid{grid-template-columns:1fr;}}
+    .card{
+      background:#fff;
+      border:1px solid #e2e8f0;
+      border-radius:14px;
+      padding:18px 20px;
+      margin-bottom:16px;
+    }
+    h2{margin:0 0 10px; font-size:1.2rem;}
+    h3{margin:12px 0 8px;}
+    img.photo {
+  width: 100%;              /* ocupa todo el ancho disponible */
+  border-radius: 50%;       /* círculo perfecto */
+  border: 1px solid #e2e8f0;/* borde gris claro */
+  object-fit: cover;        /* recorta para mantener proporción */
+}
+    ul,ol{margin:6px 0 10px 20px;}
+    a{color:#2563eb; text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    table{width:100%; border-collapse:collapse;}
+    thead th{background:#f1f5f9; padding:8px; text-align:left;}
+    th,td{border:1px solid #e2e8f0; padding:8px; vertical-align:top;}
+    form{display:grid; gap:10px; max-width:560px;}
+    label{font-weight:600;}
+    input[type="text"],input[type="email"],textarea{
+      width: 70px;%; padding:10px 12px;
+      border:1px solid #e2e8f0; border-radius:10px;
+    }
+    textarea{min-height:120px; resize:vertical;}
+    .btn{
+      border:none; background:#2563eb; color:#fff;
+      padding:10px 14px; border-radius:10px;
+      cursor:pointer; font-weight:600;
+    }
+    .btn:hover{filter:brightness(.95);}
+    @page{size:A4; margin:14mm;}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Santiago Pérez Altamar</h1>
+      <p class="subtitle">Ingeniero En Sistemas • valledupar, Colombia • santiagoperezaltamar@gmail.com • +57 318 1636264</p>
+    </header>
+
+    <div class="grid">
+      <!-- Columna izquierda -->
+      <aside>
+        <section class="card">
+          <h2>Perfil</h2>
+          <img class="photo" src="foto de perfil.jpg" alt="Foto personal" />
+          <p><strong>Contacto</strong><br>
+            <a href="mailto:tu@correo.com">santaigoperezaltamar@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/tu-usuario">LinkedIn</a><br>
+            <a href="https://github.com/tu-usuario">GitHub</a>
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>En el ambito profesional: 
+            programación basica de c++, conocimiento de programación general.
+          </h2>
+          <ul>
+            <li>HTML5, CSS3, c++</li>
+            <li>Git, GitHub y visual studio code</li>
+            <li>Trabajo en equipo</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Redes</h2>
+          <ul>
+            <li><a href="https://github.com/tu-usuario">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/tu-usuario">LinkedIn</a></li>
+            <li><a href="https://instagram.com/tu-usuario">Instagram: santiagoperezaltamar</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- Columna derecha -->
+      <main>
+        <section class="card">
+          <h2>Presentación</h2>
+          <p>Hola, soy Santiago,Ingeniero En Sistemas egresado de la upc, Esta es mi página personal en formato de hoja de vida. Aquí comparto mi perfil, mis pasatiempos y mis tareas prioritarias.</p>
+        </section>
+
+        <section class="card">
+          <h2>Pasatiempos y Tareas</h2>
+          <div style="display:grid; gap:12px; grid-template-columns:repeat(2,1fr);">
+            <div>
+              <h3>Pasatiempos</h3>
+              <ul>
+                <li>Leer</li>
+                <li>Escuchar música</li>
+                <li>Hacer ejercicio</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tareas prioritarias</h3>
+              <ol>
+                <li>Terminar el laboratorio</li>
+                <li>Actualizar GitHub</li>
+                <li>Compartir el enlace</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Horario Semanal</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>08:00–10:00</th>
+                <td>desayuno</td><td>desayuno</td><td>desayuno</td><td>desayuno</td><td>desayuno</td>
+              </tr>
+              <tr>
+                <th>10:00–12:00</th>
+                <td>clase de programación</td><td>clase de programación</td><td>clase de programación</td><td>clase de programación</td><td>clase de programación</td>
+              </tr>
+              <tr>
+                <th>14:00–16:00</th>
+                <td>futbol</td><td>futbol</td><td>futbol</td><td>futbol</td><td>futbol</td>
+              </tr>
+              <tr>
+                <th>16:00–18:00</th>
+                <td>cena,dormir</td><td>cena,dormir</td><td>cena,dormir<td>cena,dormir<td>cena,dormir</td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card">
+          <h2>Contáctame</h2>
+          <form action="#" method="post">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+            </div>
+            <div>
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tu-correo@ejemplo.com" required />
+            </div>
+            <div>
+              <label for="motivo">Motivo</label>
+              <textarea id="motivo" name="motivo" placeholder="Cuéntame en qué te puedo ayudar" required></textarea>
+            </div>
+            <div>
+              <input type="submit" class="btn" value="Enviar mensaje" />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
